@@ -6,6 +6,8 @@
   color: #fafafa;
   @media (max-width: 1024px) {
     font-size: 0.7em;
+    display: flex;
+        flex-direction: row;
   }
   .main-footer {
     margin-right: 20%;
@@ -19,10 +21,9 @@
       @media (max-width: 1024px) {
         margin-right: 10px;
         margin: 10px;
+        
       }
-      .follow {
       
-      }
       img {
         height: 5vh;
         margin-right: 5px;
