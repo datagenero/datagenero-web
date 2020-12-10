@@ -3,8 +3,8 @@ import "./footer.scss";
 import medium from "../../assets/medium.png";
 import tw from "../../assets/tw.png";
 import ig from "../../assets/ig.png";
-import { Route, NavLink, HashRouter } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import Design from './Design';
 const Footer = () => {
     return (
                 
@@ -33,7 +33,8 @@ const Footer = () => {
                 <p className="contacto-mail">datagenero@gmail.com</p>
             </div>
             </div>
-            <div className="design">Diseñado y desarrollado por <a className="footer-link" href="https://github.com/maisli4">Maia Slipczuk </a></div>
+            <Design/>
+
        </div>
        
 

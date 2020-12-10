@@ -1,13 +1,16 @@
 .footer {
+  display: flex;
   height: 100%;
   width: 100%;
   background-color: #69458d;
   font-size: 1em;
+  flex-direction: column;
+
   color: #fafafa;
   @media (max-width: 1024px) {
     font-size: 0.7em;
     display: flex;
-        flex-direction: row;
+    flex-direction: column;
   }
   .main-footer {
     margin-right: 20%;
@@ -16,24 +19,24 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 3vh;
-
+    @media (max-width: 1024px) {
+      margin: 0px;
+    }
     .logos-wrapper {
       @media (max-width: 1024px) {
-        margin-right: 10px;
-        margin: 10px;
-        
+        margin-right: 5px;
+        margin: 0px;
       }
-      
+
       img {
         height: 5vh;
         margin-right: 5px;
       }
     }
 
-    .contacto-footer{
+    .contacto-footer {
       @media (max-width: 1024px) {
         margin-right: 10px;
-        margin: 10px;
       }
     }
 
@@ -44,7 +47,7 @@
 
       @media (max-width: 1024px) {
         margin-right: 10px;
-        margin: 10px;
+        margin: 0px;
       }
       .link {
         text-decoration: none;
@@ -54,20 +57,5 @@
       }
     }
   }
-  .design {
-    display: flex;
-    justify-content: flex-end;
-    padding: 30px;
-    font-size: 1em;
 
-    @media (max-width: 1024px) {
-      font-size: 1em;
-    }
-    .footer-link {
-      margin-left: 5px;
-      margin-right: 5px;
-      text-decoration: none;
-      color: #40caa1;
-    }
-  }
 }
